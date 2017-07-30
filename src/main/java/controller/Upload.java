@@ -41,6 +41,7 @@ public class Upload {
 
             Image img1 = ImageIO.read(inputStream1);
             Image img2 = ImageIO.read(inputStream2);
+            Graphics g = img1.getGraphics();
         } catch (IOException e) {
             e.printStackTrace();
         }
