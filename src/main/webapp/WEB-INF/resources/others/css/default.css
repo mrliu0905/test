@@ -12,7 +12,6 @@
 
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'icomoon';
-	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -157,7 +156,6 @@ a:hover,a:focus{color:#74777b;}
 	font-variant: normal;
 	font-family: 'icomoon';
 	line-height: 1;
-	speak: none;
 	-webkit-font-smoothing: antialiased;
 }
 /* footer */
