@@ -30,7 +30,6 @@
       action="success" method="post">
 
 
-
     <div class="htmleaf-container" id="step2">
         <!-- Content -->
         <div class="container">
@@ -38,15 +37,13 @@
                 <!--图片-->
                 <div class="col-md-9">
                     <!-- <h3 class="page-header">Demo:</h3> -->
-                    <%--<div class="img-container">--%>
-                    <%--<img id="file1" name="file1"--%>
-                    <%--src="${pageContext.request.contextPath}/styles/others/assets/img/picture.jpg"--%>
-                    <%--alt="Picture">--%>
-                    <%--</div>--%>
-
-
+                    <div class="img-container">
+                        <img src="${pageContext.request.contextPath}/styles/others/assets/img/picture.jpg"
+                             alt="Picture" id="img1">
+                    </div>
                     <div class="img-container">
                         <input type="file" id="file1" name="file1"/>
+
                         <div id="aaa" style="width: 640px;height: 900px"></div>
                     </div>
                 </div>
@@ -57,22 +54,22 @@
                     <div class="docs-data">
                         <div class="input-group">
                             <label class="input-group-addon" for="dataX">X</label>
-                            <input class="form-control" id="dataX" type="text" placeholder="x">
+                            <input class="form-control" name="dataX" id="dataX" type="text" placeholder="x"/>
                             <span class="input-group-addon">px</span>
                         </div>
                         <div class="input-group" id="y">
                             <label class="input-group-addon" for="dataY">Y</label>
-                            <input class="form-control" id="dataY" type="text" placeholder="y">
+                            <input class="form-control" name="dataY" id="dataY" type="text" placeholder="y">
                             <span class="input-group-addon">px</span>
                         </div>
                         <div class="input-group" id="width">
                             <label class="input-group-addon" for="dataWidth">Width</label>
-                            <input class="form-control" id="dataWidth" type="text" placeholder="width">
+                            <input class="form-control" name="dataWidth" id="dataWidth" type="text" placeholder="width">
                             <span class="input-group-addon">px</span>
                         </div>
                         <div class="input-group" id="height">
                             <label class="input-group-addon" for="dataHeight">Height</label>
-                            <input class="form-control" id="dataHeight" type="text" placeholder="height">
+                            <input class="form-control" name="dataHeight" id="dataHeight" type="text" placeholder="height">
                             <span class="input-group-addon">px</span>
                         </div>
                         <div class="input-group">

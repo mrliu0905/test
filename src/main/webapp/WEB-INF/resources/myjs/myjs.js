@@ -3,6 +3,12 @@
  */
 
 $("#file1").click(function () {
+
+    console.log("x_0:"+$("#dataX").val())
+    console.log("y_0:"+$("#dataY").val())
+    console.log("width_0:"+$("#dataWidth").val())
+    console.log("height_0:"+$("#dataHeight").val())
+
     var aaa = document.getElementById("aaa"); //获取显示图片的div元素
     var input = document.getElementById("file1"); //获取选择图片的input元素
 
@@ -27,15 +33,22 @@ $("#file1").click(function () {
         reader.readAsDataURL(file); //调用readAsDataURL方法来读取选中的图像文件
         //最后在onload事件中，获取到成功读取的文件内容，并以插入一个img节点的方式显示选中的图片
         reader.onload = function (e) {
-            aaa.innerHTML =
-                '<img src="' + this.result + '" alt=""' +
-                '+ style="width: 640px;height: 900px" id = "myimg"/>'
+            //aaa.innerHTML =
+            //    '<img src="' + this.result + '" alt="Picture"' +
+            //    '+ style="width: 640px;height: 900px"/>'
+            console.log("before:img1.src:"+$('#img1')[0].src)
+            $("#img1")[0].src=this.result;
+            console.log("after:img1.src:"+$('#img1')[0].src)
         }
     }
 });
 
 
 $("#next2").click(function () {
+    console.log("x_1:"+$("#dataX").val())
+    console.log("y_1:"+$("#dataY").val())
+    console.log("width_1:"+$("#dataWidth").val())
+    console.log("height_1:"+$("#dataHeight").val())
     $("#step2").hide()
     $("#step3").show()
     $("#submit").show()
