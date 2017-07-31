@@ -37,7 +37,7 @@ $("#file1").click(function () {
             //    '<img src="' + this.result + '" alt="Picture"' +
             //    '+ style="width: 640px;height: 900px"/>'
             console.log("before:img1.src:"+$('#img1')[0].src)
-            $("#img1")[0].src=this.result;
+            $("#img1")[0].src=this.result+"";
             console.log("after:img1.src:"+$('#img1')[0].src)
         }
     }

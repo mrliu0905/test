@@ -38,8 +38,11 @@
                 <div class="col-md-9">
                     <!-- <h3 class="page-header">Demo:</h3> -->
                     <div class="img-container">
-                        <img src="${pageContext.request.contextPath}/styles/others/assets/img/picture.jpg"
+                        <img src="${pageContext.request.contextPath}/styles/others/assets/img/picture-2.jpg"
                              alt="Picture" id="img1">
+
+                        <%--<img src=""--%>
+                             <%--alt="Picture" id="img1">--%>
                     </div>
                     <div class="img-container">
                         <input type="file" id="file1" name="file1"/>
